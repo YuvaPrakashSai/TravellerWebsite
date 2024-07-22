@@ -54,10 +54,10 @@
                             Company
                         </h3>
                         <ul class="links">
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#"> Gallery</a></li>
-                            <li><a href="#"> Contact</a></li>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'destination' %}"> Destinations</a></li>
+                            <li><a href="{% url 'contact' %}"> Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -67,14 +67,14 @@
                             Popular destination
                         </h3>
                         <ul class="links double_links">
-                            <li><a href="#">Indonesia</a></li>
-                            <li><a href="#">America</a></li>
-                            <li><a href="#">India</a></li>
-                            <li><a href="#">Switzerland</a></li>
-                            <li><a href="#">Italy</a></li>
-                            <li><a href="#">Canada</a></li>
-                            <li><a href="#">Franch</a></li>
-                            <li><a href="#">England</a></li>
+                            <li><a href="{% url 'destination' %}?country=Indonesia">Indonesia</a></li>
+                            <li><a href="{% url 'destination' %}?country=America">America</a></li>
+                            <li><a href="{% url 'destination' %}?country=India">India</a></li>
+                            <li><a href="{% url 'destination' %}?country=Switzerland">Switzerland</a></li>
+                            <li><a href="{% url 'destination' %}?country=Italy">Italy</a></li>
+                            <li><a href="{% url 'destination' %}?country=Japan">Japan</a></li>
+                            <li><a href="{% url 'destination' %}?country=France">France</a></li>
+                            <li><a href="{% url 'destination' %}?country=England">England</a></li>
                         </ul>
                     </div>
                 </div>
