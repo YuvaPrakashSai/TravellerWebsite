@@ -1,22 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "TravellerWebsite/wsgi.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
-      }
-    },
-    {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "staticfiles_build"
-      }
+  "functions": {
+    "TravellerWebsite/wsgi.py": {
+      "runtime": "python3.9",
+      "maxDuration": 30,
+      "memory": 1024
     }
-  ],
+  },
   "routes": [
     {
       "src": "/static/(.*)",
@@ -26,10 +16,5 @@
       "src": "/(.*)",
       "dest": "TravellerWebsite/wsgi.py"
     }
-  ],
-  "functions": {
-    "TravellerWebsite/wsgi.py": {
-      "maxDuration": 60
-    }
-  }
+  ]
 }
