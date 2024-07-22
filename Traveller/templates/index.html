@@ -106,7 +106,7 @@
                 <div class="single_place">
                     <div class="thumb">
                         <img src="{{i.img.url}}" alt="">
-                        <a href="#" class="prise">${{i.price}}</a>
+                        <a href="{% url 'travelplace' i.id %}" class="prise">${{i.price}}</a>
                         {% if i.flag %}
                         <i class="so">Special Offer</i>
                         {% endif %}
