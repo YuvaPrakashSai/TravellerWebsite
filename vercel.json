@@ -29,7 +29,7 @@
   ],
   "functions": {
     "TravellerWebsite/wsgi.py": {
-      "maxDuration": 60
+      "maxDuration": 30 // Adjusted to 30 seconds for demonstration
     }
   }
 }
