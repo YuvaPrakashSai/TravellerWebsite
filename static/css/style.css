@@ -6644,6 +6644,14 @@ h6 {
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
   }
+  .mytff{
+    font-family: "Nothing You Could Do", cursive;
+      font-weight: 200;
+      font-size: 150%;
+      line-height: 45px;
+      color: #000;
+      margin-bottom: 4%;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -6684,6 +6692,14 @@ h6 {
   }
 
   .myff{
+    font-family: "Nothing You Could Do", cursive;
+      font-weight: 400;
+      font-size: 300%;
+      line-height: 90px;
+      color: #000;
+      margin-bottom: 4%;
+  }
+.mytff{
     font-family: "Nothing You Could Do", cursive;
       font-weight: 400;
       font-size: 300%;
